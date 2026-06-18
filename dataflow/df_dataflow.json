@@ -47,6 +47,7 @@
 				"sourcesa filter(Country == 'USA') ~> filterrows",
 				"filterrows sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     rowUrlColumn:'',",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",

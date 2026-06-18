@@ -1,0 +1,23 @@
+{
+	"name": "DS_srcsa",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_srcsa_dataflow",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Sales_File_2020_USA_UK_IND.csv",
+				"container": "srccon"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

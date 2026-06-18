@@ -7,9 +7,21 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adfGithuDemo3456"
 		},
+		"ls_destsa_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_destsa'"
+		},
 		"ls_srcSa_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_srcSa'"
+		},
+		"ls_srcsa_dataflow_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_srcsa_dataflow'"
+		},
+		"ls_destsa_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://destsa145200.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -38,8 +50,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ls_destsa_accountKey": {
+						"value": "[parameters('ls_destsa_accountKey')]"
+					},
 					"ls_srcSa_connectionString": {
 						"value": "[parameters('ls_srcSa_connectionString')]"
+					},
+					"ls_srcsa_dataflow_connectionString": {
+						"value": "[parameters('ls_srcsa_dataflow_connectionString')]"
+					},
+					"ls_destsa_properties_typeProperties_url": {
+						"value": "[parameters('ls_destsa_properties_typeProperties_url')]"
 					}
 				}
 			},

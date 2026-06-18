@@ -5,8 +5,17 @@
 		"factoryName": {
 			"value": "adfGithuDemo3456"
 		},
+		"ls_destsa_accountKey": {
+			"value": ""
+		},
 		"ls_srcSa_connectionString": {
 			"value": ""
+		},
+		"ls_srcsa_dataflow_connectionString": {
+			"value": ""
+		},
+		"ls_destsa_properties_typeProperties_url": {
+			"value": "https://destsa145200.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""

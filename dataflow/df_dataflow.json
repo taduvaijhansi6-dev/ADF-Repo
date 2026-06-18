@@ -12,10 +12,18 @@
 					"name": "sourcesa"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "ds_destsa",
+						"type": "DatasetReference"
+					},
+					"name": "sinkDAta"
+				}
+			],
 			"transformations": [
 				{
-					"name": "filter1"
+					"name": "filterrows"
 				}
 			],
 			"scriptLines": [
@@ -36,7 +44,14 @@
 				"     escapeChar: '\\\\',",
 				"     quoteChar: '\\\"',",
 				"     columnNamesAsHeader: true) ~> sourcesa",
-				"sourcesa filter(ERROR_FUNCTION('')) ~> filter1"
+				"sourcesa filter(Country == 'USA') ~> filterrows",
+				"filterrows sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sinkDAta"
 			]
 		}
 	}

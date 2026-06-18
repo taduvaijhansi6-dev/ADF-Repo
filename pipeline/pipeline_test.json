@@ -15,10 +15,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataset": {
-						"referenceName": "Ds_srcsa",
-						"type": "DatasetReference"
-					},
 					"fieldList": [
 						"childItems"
 					],

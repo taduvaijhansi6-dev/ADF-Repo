@@ -242,7 +242,7 @@
 						"     escapeChar: '\\\\',",
 						"     quoteChar: '\\\"',",
 						"     columnNamesAsHeader: true) ~> sourcesrc",
-						"sourcesrc filter(Product_Type == 'electronics') ~> filterColumns",
+						"sourcesrc filter(Country == 'IND') ~> filterColumns",
 						"sourcesrc sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     rowUrlColumn:'',",

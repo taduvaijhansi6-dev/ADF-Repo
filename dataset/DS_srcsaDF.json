@@ -1,8 +1,8 @@
 {
-	"name": "DS_srcsa",
+	"name": "DS_srcsaDF",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_srcsa_dataflow",
+			"referenceName": "ls_srcsadf",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -18,6 +18,23 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Product_Type",
+				"type": "String"
+			},
+			{
+				"name": "Sales",
+				"type": "String"
+			}
+		]
 	}
 }

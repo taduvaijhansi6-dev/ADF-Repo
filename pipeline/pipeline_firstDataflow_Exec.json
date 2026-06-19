@@ -1,5 +1,5 @@
 {
-	"name": "pipeline_torun_dataflow",
+	"name": "pipeline_firstDataflow_Exec",
 	"properties": {
 		"activities": [
 			{
@@ -15,8 +15,12 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"dataflow": {
+						"referenceName": "dataflow_first",
+						"type": "DataFlowReference"
+					},
 					"integrationRuntime": {
-						"referenceName": "integrationRuntime1",
+						"referenceName": "integrationRuntimeDatafalow",
 						"type": "IntegrationRuntimeReference"
 					},
 					"traceLevel": "Coarse"

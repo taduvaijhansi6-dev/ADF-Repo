@@ -1,0 +1,15 @@
+{
+	"name": "MyfirstDataFlowDemo",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2a8c5f0e-14b3-45ce-85c4-7d3837746c65",
+		"tenantId": "4210e426-4ef7-4992-afad-39a4ba07b224"
+	}
+}

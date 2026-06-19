@@ -15,10 +15,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataflow": {
-						"referenceName": "df_dataflow",
-						"type": "DataFlowReference"
-					},
 					"integrationRuntime": {
 						"referenceName": "integrationRuntime1",
 						"type": "IntegrationRuntimeReference"

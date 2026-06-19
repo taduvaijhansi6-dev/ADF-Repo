@@ -1,10 +1,6 @@
 {
 	"name": "ds_destsa",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "ls_destsa",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

@@ -45,7 +45,7 @@
 				"     quoteChar: '\\\"',",
 				"     columnNamesAsHeader: true) ~> sourcesrc",
 				"sourcesrc filter(Product_Type == 'electronics') ~> filterColumns",
-				"filterColumns sink(allowSchemaDrift: true,",
+				"sourcesrc sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     rowUrlColumn:'',",
 				"     umask: 0022,",

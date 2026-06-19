@@ -19,9 +19,9 @@
 						"referenceName": "dataflow_first",
 						"type": "DataFlowReference"
 					},
-					"compute": {
-						"coreCount": 8,
-						"computeType": "General"
+					"integrationRuntime": {
+						"referenceName": "integrationRuntimeDatafalow",
+						"type": "IntegrationRuntimeReference"
 					},
 					"traceLevel": "Coarse"
 				}
